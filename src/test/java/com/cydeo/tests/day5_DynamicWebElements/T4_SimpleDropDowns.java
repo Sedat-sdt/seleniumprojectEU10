@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -25,7 +26,10 @@ public class T4_SimpleDropDowns {
         //2. Go to https://practice.cydeo.com/dropdown
         driver.get("https://practice.cydeo.com/dropdown");
     }
-
+    @AfterMethod
+    public void tearDownMethod(){
+        driver.close();
+    }
     @Test
     public void simpleDropDownTest(){
 
