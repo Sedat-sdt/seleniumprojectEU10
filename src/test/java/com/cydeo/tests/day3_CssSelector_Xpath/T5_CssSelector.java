@@ -1,6 +1,6 @@
 package com.cydeo.tests.day3_CssSelector_Xpath;
 
-import com.cydeo.utilities.WebDriverFactory;
+import com.cydeo.tests.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
