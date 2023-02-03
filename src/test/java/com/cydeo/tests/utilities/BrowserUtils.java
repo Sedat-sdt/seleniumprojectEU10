@@ -25,6 +25,8 @@ public class BrowserUtils {
         }
     }
 
+
+
     /*
     This method accepts 3 arguments.
     Arg1: webdriver

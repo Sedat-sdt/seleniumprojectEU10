@@ -1,11 +1,14 @@
 package com.cydeo.tests.day10_Upload_Actions_JSexecuter;
 
+import com.cydeo.tests.utilities.BrowserUtils;
 import com.cydeo.tests.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
+
+import java.util.Set;
 
 public class T4_ScrollPractice {
 
@@ -20,7 +23,7 @@ public class T4_ScrollPractice {
 
 
         //3- Scroll down to “Powered by CYDEO”
-         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+         //JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         // js.executeAsyncScript()
 
 
@@ -31,7 +34,33 @@ public class T4_ScrollPractice {
 
         actions.moveToElement(poweredByCydeoText).perform();
 
+        WebElement cydeoLink = Driver.getDriver().findElement(By.xpath("//a[@target='_blank']"));
+        actions.moveToElement(cydeoLink).perform();
+        cydeoLink.click();
 
+        String mainWindow= Driver.getDriver().getWindowHandle();
+
+        Set<String> windowHandles = Driver.getDriver().getWindowHandles();
+
+        for (String each : windowHandles) {
+            Driver.getDriver().switchTo().window(each);
+            System.out.println("Driver.getDriver().getTitle() = " + Driver.getDriver().getTitle());
+
+        }
+
+        System.out.println("after for loop getTitle() = " + Driver.getDriver().getTitle());
+
+        Driver.getDriver().switchTo().window(mainWindow);
+
+        System.out.println("after switching main window getTitle() = " + Driver.getDriver().getTitle());
+
+        WebElement homeLink = Driver.getDriver().findElement(By.xpath("//a[@class='nav-link']"));
+
+        BrowserUtils.sleep(2);
+
+        //actions.moveToElement(homeLink).perform();
+
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
 
 
         //TC #5: Scroll practice 2

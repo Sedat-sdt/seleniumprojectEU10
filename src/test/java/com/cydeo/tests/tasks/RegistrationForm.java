@@ -114,8 +114,9 @@ public class RegistrationForm {
         //displayed.
 
         WebElement successMessage=Driver.getDriver().findElement(By.xpath("//div[@class='alert alert-success']/p"));
-        String expectedMessageText="You’ve successfully completed registration!";
+        String expectedMessageText="You've successfully completed registration!";
         String actualMessageText= successMessage.getText();
+
 
         Assert.assertEquals(expectedMessageText,actualMessageText,"! sign is  difference");
 

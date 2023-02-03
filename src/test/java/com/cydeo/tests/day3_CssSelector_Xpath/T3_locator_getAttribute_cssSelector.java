@@ -27,6 +27,8 @@ public class T3_locator_getAttribute_cssSelector {
         String expectedButtonText="Log In";
         String actualButtonText= signInButton.getAttribute("value");
 
+        System.out.println(actualButtonText);
+
         if(actualButtonText.equals(expectedButtonText)){
             System.out.println("PASSED!");
         }else {
