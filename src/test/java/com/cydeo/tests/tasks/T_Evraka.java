@@ -1,6 +1,6 @@
 package com.cydeo.tests.tasks;
 
-import com.cydeo.tests.utilities.Driver;
+import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

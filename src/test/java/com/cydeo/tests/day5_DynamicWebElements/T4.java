@@ -1,6 +1,6 @@
 package com.cydeo.tests.day5_DynamicWebElements;
 
-import com.cydeo.tests.utilities.BrowserUtils;
+import com.cydeo.utilities.BrowserUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

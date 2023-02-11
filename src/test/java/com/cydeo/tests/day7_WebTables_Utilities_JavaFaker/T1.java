@@ -1,6 +1,6 @@
 package com.cydeo.tests.day7_WebTables_Utilities_JavaFaker;
 
-import com.cydeo.tests.utilities.Driver;
+import com.cydeo.utilities.Driver;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 

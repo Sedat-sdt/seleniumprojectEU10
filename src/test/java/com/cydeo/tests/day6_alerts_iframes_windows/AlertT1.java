@@ -1,6 +1,6 @@
 package com.cydeo.tests.day6_alerts_iframes_windows;
 
-import com.cydeo.tests.utilities.BrowserUtils;
+import com.cydeo.utilities.BrowserUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

@@ -1,7 +1,7 @@
 package com.cydeo.tests.tasks;
 
-import com.cydeo.tests.utilities.BrowserUtils;
-import com.cydeo.tests.utilities.Driver;
+import com.cydeo.utilities.BrowserUtils;
+import com.cydeo.utilities.Driver;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

@@ -1,6 +1,6 @@
 package com.cydeo.tests.tasks;
 
-import com.cydeo.tests.utilities.Driver;
+import com.cydeo.utilities.Driver;
 import org.testng.annotations.Test;
 
 public class DoctorName {
